@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tomato Timer</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<main>
+		<h1>Tomato Timer</h1>
+		<div class="tomato">
+			<div class="btn tomato__settings" id="settings">Settings</div>
+			<div class="tomato__panel">
+				<div class="tomato__work btn active" id="workTitle">Work</div>
+				<div class="tomato__break btn" id="breakTitle">Break</div>
+			</div>
+			<div class="tomato__timer" id="tomatoTimer">
+				<span id="time"></span>
+			</div>
+			<div class="tomato__btnBlock">
+				<div class="btn tomato__btn show" id="startBtn">Start</div>
+				<div class="btn tomato__btn" id="pauseBtn">Pause</div>
+				<div class="btn tomato__btn" id="continueBtn">Continue</div>
+				<div class="btn tomato__btn" id="resetBtn">Reset</div>
+			</div>
+		</div>
+		<div class="popupWrp popup_hide" id="popUp">
+			<div class="popup__close"><span id="closeBtn">x</span></div>
+			<div class="popup__settingsBlock">				
+				<div class="popup__title">Settings</div>
+				<form class="popup__form" id="form">
+					<labe>Time of work</labe>
+					<input type="text" id="workTime" name="work">
+					<labe>Time of break</labe>
+					<input type="text" id="breakTime" name="break">
+
+					<button id="saveBtn" type="submit">Save</button>
+				</form>
+
+			</div>
+
+		</div>
+	</main>
+
+	<script type="module" src="./script.js"></script>
+</body>
+
+</html>
